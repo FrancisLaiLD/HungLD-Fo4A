@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=test
 ConfigurationName      :=Debug
-WorkspacePath          :=D:/CodeLiteProject/HungLD
-ProjectPath            :=D:/CodeLiteProject/HungLD/test
+WorkspacePath          :=D:/CodeLiteProject/HungLD/HungLD-Fo4A
+ProjectPath            :=D:/CodeLiteProject/HungLD/HungLD-Fo4A/test
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -65,7 +65,7 @@ CodeLiteDir:=C:\Program Files\CodeLite
 WXWIN:=C:\wxWidgets-3.0.4
 WXCFG:=gcc_lib\mswu
 PATH:=$PATH;C:\wxWidgets-3.0.4\lib\gcc_lib
-Objects0=$(IntermediateDirectory)/CustomDiaglog.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_TestFrame.cpp$(ObjectSuffix) 
 
 
 
@@ -96,21 +96,21 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/CustomDiaglog.cpp$(ObjectSuffix): CustomDiaglog.cpp $(IntermediateDirectory)/CustomDiaglog.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/CodeLiteProject/HungLD/test/CustomDiaglog.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/CustomDiaglog.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/CustomDiaglog.cpp$(DependSuffix): CustomDiaglog.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/CustomDiaglog.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/CustomDiaglog.cpp$(DependSuffix) -MM CustomDiaglog.cpp
-
-$(IntermediateDirectory)/CustomDiaglog.cpp$(PreprocessSuffix): CustomDiaglog.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/CustomDiaglog.cpp$(PreprocessSuffix) CustomDiaglog.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/CodeLiteProject/HungLD/test/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/CodeLiteProject/HungLD/HungLD-Fo4A/test/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/hdr_TestFrame.cpp$(ObjectSuffix): hdr/TestFrame.cpp $(IntermediateDirectory)/hdr_TestFrame.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/CodeLiteProject/HungLD/HungLD-Fo4A/test/hdr/TestFrame.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/hdr_TestFrame.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/hdr_TestFrame.cpp$(DependSuffix): hdr/TestFrame.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/hdr_TestFrame.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/hdr_TestFrame.cpp$(DependSuffix) -MM hdr/TestFrame.cpp
+
+$(IntermediateDirectory)/hdr_TestFrame.cpp$(PreprocessSuffix): hdr/TestFrame.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/hdr_TestFrame.cpp$(PreprocessSuffix) hdr/TestFrame.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

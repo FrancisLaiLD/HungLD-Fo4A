@@ -2,7 +2,7 @@
 
 // application class
 
-#include "CustomDiaglog.h"
+#include "MainFrame.h"
 
 
 class MyApp : public wxApp
@@ -13,7 +13,7 @@ class MyApp : public wxApp
 bool MyApp::OnInit()
 {
 
-    CustomDialog *custom = new CustomDialog(wxT("CustomDialog"));
+    MainFrameBase *custom = new MainFrameBase(wxT("CustomDialog"));
     custom->Show(true);
 
     return true;

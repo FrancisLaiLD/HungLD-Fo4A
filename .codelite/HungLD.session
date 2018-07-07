@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="D:\CodeLiteProject\HungLD\HungLD.workspace">
-  <int Value="3" Name="m_selectedTab"/>
-  <wxString Value="D:\CodeLiteProject\HungLD\HungLD.workspace" Name="m_workspaceName"/>
+<Session Name="D:\CodeLiteProject\HungLD\HungLD-Fo4A\HungLD.workspace">
+  <int Value="13" Name="m_selectedTab"/>
+  <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\HungLD.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="D:\CodeLiteProject\HungLD\Fo4A\main.cpp" Name="FileName"/>
@@ -47,8 +47,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\CodeLiteProject\HungLD\Fo4A\hdr\GameHandle.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="3" Name="FirstVisibleLine"/>
+      <int Value="54" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -67,23 +67,79 @@
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="D:\CodeLiteProject\HungLD\test\CustomDiaglog.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="10" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\CodeLiteProject\HungLD\test\CustomDiaglog.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="19" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
       <wxString Value="D:\CodeLiteProject\HungLD\test\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="15" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\Fo4A\hdr\MainFrame.h" Name="FileName"/>
+      <int Value="39" Name="FirstVisibleLine"/>
+      <int Value="67" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\Fo4A\hdr\AppDefine.h" Name="FileName"/>
+      <int Value="25" Name="FirstVisibleLine"/>
+      <int Value="45" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\Fo4A\hdr\AppDefine.cpp" Name="FileName"/>
+      <int Value="1" Name="FirstVisibleLine"/>
+      <int Value="1" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\Fo4A\hdr\MainFrame.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="13" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\test\hdr\TestFrame.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="23" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\test\hdr\TestFrame.cpp" Name="FileName"/>
+      <int Value="12" Name="FirstVisibleLine"/>
+      <int Value="40" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\test\main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="4" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\TestApp\main.cpp" Name="FileName"/>
+      <int Value="4" Name="FirstVisibleLine"/>
+      <int Value="17" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\Fo4A\hdr\thread.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="14" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\CodeLiteProject\HungLD\HungLD-Fo4A\Fo4A\hdr\thread.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

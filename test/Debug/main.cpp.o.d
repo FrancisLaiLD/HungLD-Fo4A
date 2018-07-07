@@ -227,7 +227,7 @@ Debug/main.cpp.o: main.cpp C:/wxWidgets-3.0.4/include/wx/wx.h \
  C:/wxWidgets-3.0.4/include/wx/filedlg.h \
  C:/wxWidgets-3.0.4/include/wx/msw/filedlg.h \
  C:/wxWidgets-3.0.4/include/wx/mdi.h \
- C:/wxWidgets-3.0.4/include/wx/msw/mdi.h CustomDiaglog.h
+ C:/wxWidgets-3.0.4/include/wx/msw/mdi.h MainFrame.h
 
 C:/wxWidgets-3.0.4/include/wx/wx.h:
 
@@ -693,4 +693,4 @@ C:/wxWidgets-3.0.4/include/wx/mdi.h:
 
 C:/wxWidgets-3.0.4/include/wx/msw/mdi.h:
 
-CustomDiaglog.h:
+MainFrame.h:

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="HungLD" Database="" Version="10.0.0">
   <Project Name="Fo4A" Path="Fo4A/Fo4A.project" Active="Yes"/>
-  <Project Name="test" Path="test/test.project" Active="No"/>
+  <Project Name="TestApp" Path="TestApp/TestApp.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="Fo4A" ConfigName="Debug"/>
-      <Project Name="test" ConfigName="Debug"/>
+      <Project Name="TestApp" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="Fo4A" ConfigName="Release"/>
-      <Project Name="test" ConfigName="Release"/>
+      <Project Name="TestApp" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
