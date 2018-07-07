@@ -1,0 +1,1 @@
+./Debug/CustomDiaglog.cpp.o ./Debug/main.cpp.o   
