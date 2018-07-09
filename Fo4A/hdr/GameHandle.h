@@ -19,7 +19,8 @@ public:
     char chMessage[256]; //here we store it's message!
     char chTitle[256]; //here we will store our messagebox's title
     HWND m_currentHWND;
-    DWORD paMessageBoxA; //pa = Procedure address in memory
+    DWORD paMessageBoxA; //pa = Procedure address : MessageBoxA in memory
+    DWORD paSendMessageBoxA; // store address of SendMessageFunction in memory
 
 };
 
@@ -29,7 +30,10 @@ public:
     GameHandle();
     ~GameHandle();
     DWORD getProcessID(char* procname);
-    void injectCodeToProcess();
+    bool injectCodeToProcess();
+    HWND getWindowHandle();
+    void mouseClickLeft(HWND mHWND, POINT btn);
+    void mouseMove(HWND mHWND, POINT btn);
 
 };
 

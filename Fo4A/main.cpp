@@ -3,24 +3,27 @@
 //#include "wx/stattext.h"
 //#include "wx/textctrl.h"
 #include "wx/datetime.h"
-#include "thread.h"
+//#include "thread.h"
 
 #include "MainFrame.h"
+#include "hdr/ThreadUpdateInfo.h"
  
  
 class MyApp: public wxApp
 {
-    wxFrame* m_frame;
+    wxFrame* m_mainFrame;
+    ThreadUpdateInfo* m_updateInfoThread;
 public:
  
     bool OnInit()
     {
-        m_frame = new MyFrame();
-        m_frame->Show();
+        m_mainFrame = new MyFrame();
+        m_mainFrame->SetIcon(wxICON(aaaa));
+        m_mainFrame->Show();
  
         // create the thread
-        MyThread* t = new MyThread(m_frame);
-        wxThreadError err = t->Create();
+        m_updateInfoThread = new ThreadUpdateInfo(m_mainFrame);
+        wxThreadError err = m_updateInfoThread->Create();
  
         if (err != wxTHREAD_NO_ERROR)
         {
@@ -28,7 +31,7 @@ public:
             return false;
         }
  
-        err = t->Run();
+        err = m_updateInfoThread->Run();
  
         if (err != wxTHREAD_NO_ERROR)
         {

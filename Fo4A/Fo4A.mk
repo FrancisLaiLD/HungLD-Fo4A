@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Francis Lai
-Date                   :=08/07/2018
+Date                   :=09/07/2018
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :="C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe"
 SharedObjectLinkerName :="C:/Program Files (x86)/CodeBlocks/MinGW/bin/g++.exe" -shared -fPIC
@@ -65,7 +65,7 @@ CodeLiteDir:=C:\Program Files\CodeLite
 WXWIN:=C:\wxWidgets-3.0.4
 WXCFG:=gcc_lib\mswu
 PATH:=$PATH;C:\wxWidgets-3.0.4\lib\gcc_lib
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_GameHandle.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_AppManagement.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_MainFrame.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_thread.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_GameHandle.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_AppManagement.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_MainFrame.cpp$(ObjectSuffix) $(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(ObjectSuffix) 
 
 
 
@@ -128,13 +128,13 @@ $(IntermediateDirectory)/hdr_MainFrame.cpp$(DependSuffix): hdr/MainFrame.cpp
 $(IntermediateDirectory)/hdr_MainFrame.cpp$(PreprocessSuffix): hdr/MainFrame.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/hdr_MainFrame.cpp$(PreprocessSuffix) hdr/MainFrame.cpp
 
-$(IntermediateDirectory)/hdr_thread.cpp$(ObjectSuffix): hdr/thread.cpp $(IntermediateDirectory)/hdr_thread.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/CodeLiteProject/HungLD/HungLD-Fo4A/Fo4A/hdr/thread.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/hdr_thread.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/hdr_thread.cpp$(DependSuffix): hdr/thread.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/hdr_thread.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/hdr_thread.cpp$(DependSuffix) -MM hdr/thread.cpp
+$(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(ObjectSuffix): hdr/ThreadUpdateInfo.cpp $(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/CodeLiteProject/HungLD/HungLD-Fo4A/Fo4A/hdr/ThreadUpdateInfo.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(DependSuffix): hdr/ThreadUpdateInfo.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(DependSuffix) -MM hdr/ThreadUpdateInfo.cpp
 
-$(IntermediateDirectory)/hdr_thread.cpp$(PreprocessSuffix): hdr/thread.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/hdr_thread.cpp$(PreprocessSuffix) hdr/thread.cpp
+$(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(PreprocessSuffix): hdr/ThreadUpdateInfo.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/hdr_ThreadUpdateInfo.cpp$(PreprocessSuffix) hdr/ThreadUpdateInfo.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

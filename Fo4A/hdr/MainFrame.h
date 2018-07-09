@@ -14,8 +14,15 @@
 #include "wx/statbox.h"
 #include "wx/statline.h"
 #include "wx/radiobut.h"
+#include "wx/thread.h"
+#include "wx/msgdlg.h"
+#include "wx/combobox.h"
+#include "wx/notebook.h"
+#include "wx/window.h"
 
 #include "AppDefine.h"
+#include "GameHandle.h"
+
  
 class MyFrame : public wxFrame
 {
@@ -24,26 +31,46 @@ private:
 private:
 
     wxPanel* panel;
-    wxStaticBox* m_boxMainAutoFunc;
-    wxStaticBox* m_boxFastSetup;
-    wxStaticBox* m_boxAutoResult;
     
+    wxNotebook* m_noteBookMain;
+    wxNotebookPage* m_pageAppGui;
+    wxNotebookPage* m_pageAppSetup;
+    
+    // PAGE ONE
+    wxStaticBox* m_boxMainAutoFunc;
     // Radio button auto function
     wxRadioButton* m_radStopAuto;
     wxRadioButton* m_radPlayWithBot;
     wxRadioButton* m_radPlayWithOther;
-    wxRadioButton* m_updating1;
-    wxRadioButton* m_updating2;
-    // static text
+    wxRadioButton* m_radBtnUpdating1;
+    wxRadioButton* m_radBtnUpdating2;
+    
+    wxStaticBox* m_boxFastSetup;
     wxStaticText* m_sttTextCurMode;
-    wxStaticText* m_sttCurrentTime;
-    wxStaticText* m_currentTime;
-    wxStaticText* m_sttTimeAutoRun;
-    wxStaticText* m_timeAutoRun;
-    wxButton* m_btnTest;
+    // combobox
+    wxComboBox* m_comboBox;
+    
+    wxStaticBox* m_boxAutoResult;
+    // static text
+    
+    // PAGE TWO
+    wxStaticBox* m_boxAutoSetup;
+    
+    wxStaticText* m_sttTextCurrentTime;
+    wxStaticText* m_textCurrentTime;
+    wxStaticText* m_sttTextTimeAutoRun;
+    wxStaticText* m_textTimeAutoRun;
+    wxStaticText* m_sttTextGameStatus;
+    wxStaticText* m_textGameStatus;
+    wxButton* m_btnOutGame;
+    
+    wxStaticBox* m_boxAutoInfo;
     
     // static line
     wxStaticLine *m_sttLine;
+    
+    // Handle Game
+    GameHandle* m_gameHandle;
     
 public:
     // Default Constructor and Destructor
@@ -60,6 +87,11 @@ public:
     void onRadBtnStopAutoClick(wxCommandEvent& evt);
     void onRadBtnPlayWithBotClick(wxCommandEvent& evt);
     void onRadBtnPlayWithOtherClick(wxCommandEvent& evt);
+    void onRadBtnUpdating1Click(wxCommandEvent& evt);
+    void onRadBtnUpdating2Click(wxCommandEvent& evt);
+    
+    // handle Exit program
+    void OnCloseWindow(wxCommandEvent& evt);
     
     // catch the event from the thread
     DECLARE_EVENT_TABLE()
